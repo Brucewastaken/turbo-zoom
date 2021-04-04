@@ -33,6 +33,6 @@ function convertLink() {
 
   joinID = "zoommtg://zoom.us/join?confno=" + joinID;
   console.log(joinID);
-  chrome.tabs.create({ url: joinID });
-  //alert('the smart zoom link is: ' + joinID);
+  //chrome.tabs.create({ url: joinID });
+  alert('the smart zoom link is: ' + joinID);
 }
