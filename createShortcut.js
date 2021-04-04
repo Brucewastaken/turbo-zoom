@@ -13,7 +13,7 @@ form.addEventListener('submit', function(e) {
     e.preventDefault();
     if (zoomUrl.value) {
         var zoomUrlValue = zoomUrl.value;
-        if (zoomUrlValue.includes('https://') || zoomUrlValue.includes('http://')) {
+        if (zoomUrlValue.includes('https://') || zoomUrlValue.includes('http://') || zoomUrlValue.includes('zoommtg')) {
             savedLinksArray.push(zoomUrl.value);
         } else {
             savedLinksArray.push('http://' + zoomUrl.value);
