@@ -1,0 +1,10 @@
+{
+  "name": "Turbo Zoom",
+  "description": "Optimizes and shortcuts your Zoom links to make launching Zoom meetings faster, smoother, and easier.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": ["storage", "activeTab", "clipboardRead", "clipboardWrite"]
+}

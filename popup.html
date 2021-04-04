@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--link rel="stylesheet" href="button.css"-->
+   
+    <style>
+      body{
+        width: 400px;
+        height:500px;
+        background-color: black;
+      }
+
+      h1{
+        color : rgb(255, 255, 255);
+        font-size : xx-large;
+        font-family :Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        outline-color : rgb(224, 224, 224);
+        outline-style : solid;
+        outline-width : 2px;
+        text-align : center;
+      }
+
+      h2{
+        color: rgb(255, 255, 255);
+        font-size: large;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: center;
+        margin: 10px;
+        list-style-type: none;
+        outline-width: 5px;
+        outline-color: rgb(224, 224, 224);
+      }
+
+      button{
+        color: rgb(0, 0, 0);
+        font-size: large;
+        margin: auto;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        left: 50%;
+        display: flex;
+        text-align: center;
+      }
+
+      input{
+        margin: auto;
+        text-align: center;
+        left: 50%;
+        display: flex;
+      }
+
+      table{
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      a{
+        color: rgb(255, 255, 255);
+        font-size: large;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: center;
+        margin: 10px;
+        list-style-type: none;
+        outline-width: 5px;
+        outline-color: rgb(224, 224, 224);
+        text-decoration: none;
+      }
+
+      td{
+        color: rgb(255, 255, 255);
+        text-align: center;
+        font-size: medium;
+      }
+
+      li{
+        color: rgb(255, 255, 255);
+        font-size: large;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: left;
+        margin: 10px;
+        list-style-type: none;
+        outline-width: 5px;
+        outline-color: rgb(224, 224, 224);
+      }
+
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+
+      #delete{
+        color: rgb(255, 0, 0);
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="logo_200x200.png">
+    <br>
+    <hr>
+    <br>
+    <button id="convertButton">Smarten Zoom link from clipboard!</button>
+    <ul id="meetLinks">
+    </ul>
+
+    <br>
+    <h2>Create new shortcut</h2>
+    <form id="form" action="">
+      <table>
+        <tr>      
+          <td>Meet URL:</td> 
+          <td><input id="zoomUrl" autocomplete="off"/></td>
+        </tr>
+        <tr>      
+          <td>Nickname:</td> 
+          <td><input id="zoomName" autocomplete="off"/></td>
+        </tr>
+      </table>
+      <button>Add</button>
+    </form>
+    <script src="convertLink.js"></script>
+    <script src="listLinks.js"></script>
+    <script src="createShortcut.js"></script>
+  </body>
+</html>
